@@ -12,8 +12,8 @@
 @interface SATree : NSObject
 
 @property NSMutableArray *apples;
-- (int)growWith:(NSString *)sort andSeason:(NSString *)season;
-- (int)SAShake;
-- (NSString *)SAGetStatus;
+- (int)growWithSort:(NSString *)sort andSeason:(NSString *)season;
+- (int)shake;
+- (NSString *)getStatus;
 
 @end

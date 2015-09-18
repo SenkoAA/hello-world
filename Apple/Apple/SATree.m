@@ -10,7 +10,7 @@
 
 @implementation SATree
 
-- (int)SAGrowWith:(NSString *)sort And:(NSString *)season {
+- (int)growWithSort:(NSString *)sort andSeason:(NSString *)season {
     if (self.apples == nil || [self.apples count] == 0) {
         self.apples = nil;
         self.apples = [[NSMutableArray alloc] init];
@@ -34,7 +34,7 @@
     }
 }
 
-- (int)SAShake {
+- (int)shake {
     if (self.apples != nil && ([self.apples count] != 0)) {
         int curApplesCount = (int)[self.apples count];
         int removeApplesCount = arc4random_uniform(curApplesCount) + 1;
@@ -47,7 +47,7 @@
     }
 }
 
-- (NSString *)SAGetStatus {
+- (NSString *)getStatus {
     NSMutableString *curStatus = [[NSMutableString alloc] init];
     int applesCount = 0;
     if (self.apples != nil) {

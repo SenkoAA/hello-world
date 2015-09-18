@@ -14,17 +14,17 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World! My name is Alexey.");
         SATree *myTree = [[SATree alloc] init];
-        [myTree SAGrowWith: @"Brina" And: @"Early autumn"];
-        NSLog([myTree SAGetStatus]);
+        [myTree growWithSort:@"Brina" andSeason:@"Early autumn"];
+        NSLog([myTree getStatus]);
         NSLog(@"First shake:");
-        [myTree SAShake];
-        NSLog([myTree SAGetStatus]);
+        [myTree shake];
+        NSLog([myTree getStatus]);
         NSLog(@"Second shake:");
-        [myTree SAShake];
-        NSLog([myTree SAGetStatus]);
+        [myTree shake];
+        NSLog([myTree getStatus]);
         NSLog(@"Try to grow again:");
-        [myTree SAGrowWith: @"Antonovka" And: @"Late september"];
-        NSLog([myTree SAGetStatus]);
+        [myTree growWithSort:@"Antonovka" andSeason:@"Late september"];
+        NSLog([myTree getStatus]);
     }
     return 0;
 }

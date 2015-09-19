@@ -7,4 +7,4 @@
 2015-09-18 17:12:02.478 Apple[1041:22138] Apples' count: 0;
 2015-09-18 17:12:02.478 Apple[1041:22138] Try to grow again:
 2015-09-18 17:12:02.478 Apple[1041:22138] Apples' count: 34; Sort: Antonovka; Season: Late september;
-Program ended with exit code: 0
+Program ended with exit code:
